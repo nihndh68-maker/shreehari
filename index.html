@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Choose Your Test · Shreehari CD IELTS</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(145deg, #f8faff 0%, #eef2fa 100%);
+    color: #1a2a4a;
+    padding: 36px 24px 64px;
+  }
+  .wrap { max-width: 1250px; margin: 0 auto; }
+  .brand {
+    text-align: center;
+    font-size: clamp(30px, 5vw, 44px);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: #2d5a8e;
+    margin-bottom: 36px;
+  }
+  h1 {
+    text-align: center;
+    font-size: clamp(24px, 4vw, 34px);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: #1a2a4a;
+    margin-bottom: 16px;
+  }
+  .sub {
+    text-align: center;
+    font-size: 16px;
+    color: #6b7280;
+    margin-bottom: 40px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 21px;
+    max-width: 625px;
+    margin: 0 auto;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 125px;
+    background: #fff;
+    border-radius: 14px;
+    gap: 5px;
+    box-shadow: 0 5px 15px rgba(26, 42, 74, .08);
+    text-decoration: none;
+    color: #2d5a8e;
+    transition: transform .18s ease, box-shadow .18s ease;
+  }
+  .card .date { font-size: 22px; font-weight: 700; letter-spacing: -0.005em; }
+  .card .tag {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #8a94a6;
+  }
+  a.card:hover { transform: translateY(-2px); box-shadow: 0 9px 20px rgba(26, 42, 74, .14); }
+  a.card:active { transform: scale(.98); }
+  a.card:focus-visible { outline: 3px solid rgba(45, 90, 142, .35); outline-offset: 3px; }
+  .card.off { cursor: default; }
+  .card.off .date { color: #2d5a8e; }
+  @media (max-width: 560px) {
+    .grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h2 class="brand">Shreehari CD IELTS</h2>
+    <h1>Choose Your Test</h1>
+    <p class="sub">Select a test to continue</p>
+    <div class="grid">
+      <a class="card" href="IELTS_Mock_26Oct.html"><span class="date">26 Oct</span></a>
+      <a class="card" href="IELTS_Mock_27Oct.html"><span class="date">27 Oct</span></a>
+      <a class="card" href="IELTS_Mock_28Oct.html"><span class="date">28 Oct</span></a>
+      <a class="card" href="IELTS_Mock_29Oct.html"><span class="date">29 Oct</span></a>
+      <a class="card" href="IELTS_Mock_30Oct.html"><span class="date">30 Oct</span></a>
+    </div>
+  </div>
+</body>
+</html>
